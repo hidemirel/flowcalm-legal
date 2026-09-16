@@ -3,23 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlowCalm</title>
+    <title>FlowCalm — Focus App for ADHD Brains</title>
+    <meta name="description" content="FlowCalm is a focus app built for ADHD brains: one-tap task breakdowns, a streak that never punishes a bad day, and visual focus sprints. Free to start, no account needed.">
+    <link rel="canonical" href="https://hidemirel.github.io/flowcalm-legal/">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FlowCalm">
+    <meta property="og:title" content="FlowCalm — Focus App for ADHD Brains">
+    <meta property="og:description" content="One-tap task breakdowns, a streak that never punishes a bad day, and visual focus sprints — built for how ADHD actually works.">
+    <meta property="og:image" content="https://hidemirel.github.io/flowcalm-legal/og-image.png">
+    <meta property="og:url" content="https://hidemirel.github.io/flowcalm-legal/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FlowCalm — Focus App for ADHD Brains">
+    <meta name="twitter:description" content="One-tap task breakdowns, a streak that never punishes a bad day, and visual focus sprints — built for how ADHD actually works.">
+    <meta name="twitter:image" content="https://hidemirel.github.io/flowcalm-legal/og-image.png">
+    <meta name="theme-color" content="#3D9970">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "FlowCalm",
+        "url": "https://hidemirel.github.io/flowcalm-legal/",
+        "image": "https://hidemirel.github.io/flowcalm-legal/og-image.png",
+        "description": "FlowCalm is a focus and productivity app built specifically for ADHD brains. It replaces generic Pomodoro timers with mood-matched focus sprints, one-tap task breakdowns, forgiving streak shields, and a growing virtual forest.",
+        "operatingSystem": "iOS",
+        "applicationCategory": "HealthApplication",
+        "downloadUrl": "https://apps.apple.com/app/id6760300743",
+        "installUrl": "https://apps.apple.com/app/id6760300743",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free with an optional FlowCalm PRO subscription"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Hidstech Ltd"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is FlowCalm free to use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The core focus-sprint loop, your first ambient sounds, your streak, and your forest are free forever. FlowCalm PRO removes the daily caps and adds unlimited task breakdowns, the full sound library, and your complete stats history."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need to create an account?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. FlowCalm has no login, no account, and no sign-up. All your data — tasks, streaks, sessions — stays locally on your device."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does FlowCalm work offline?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, fully. Every feature works without an internet connection."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is FlowCalm's \"body double\" mode?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It's a local ADHD focus technique — name a friend or choose a virtual partner and it feels like someone is working alongside you. There is no networking, no account, and no real other person involved."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I cancel FlowCalm PRO?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Manage or cancel your subscription anytime from your Apple ID subscription settings. FlowCalm never charges you directly and never sees your payment details."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is FlowCalm a medical or diagnostic tool?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. FlowCalm is a self-help focus and productivity app. It does not diagnose or treat ADHD or any condition and makes no medical claims."
+                }
+            }
+        ]
+    }
+    </script>
+
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 600px; margin: 60px auto; padding: 0 20px; color: #2C2A29; background: #EAE6DF; }
-        h1 { color: #6A8A5E; }
-        a { color: #6A8A5E; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 12px 0; }
-        li a { font-size: 18px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #2C2A29;
+            background: #F7F4EF;
+            line-height: 1.7;
+        }
+        .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px 80px; }
+        header { padding: 56px 0 24px; text-align: center; }
+        .badge { display: inline-block; background: #3D9970; color: #fff; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 12px; margin-bottom: 16px; }
+        h1 { font-size: 34px; font-weight: 700; margin-bottom: 12px; }
+        .tagline { font-size: 18px; color: #4A4744; max-width: 480px; margin: 0 auto 28px; }
+        .cta {
+            display: inline-block; background: #3D9970; color: #fff; text-decoration: none;
+            font-size: 16px; font-weight: 600; padding: 14px 28px; border-radius: 999px;
+        }
+        .trust { margin-top: 16px; font-size: 13px; color: #A09B94; }
+        section { margin-top: 48px; }
+        h2 { font-size: 22px; font-weight: 700; margin-bottom: 16px; color: #1A1A2E; }
+        .pillars { display: grid; gap: 20px; }
+        .pillar { background: #FFFFFF; border-radius: 16px; padding: 20px 24px; }
+        .pillar h3 { font-size: 16px; color: #3D9970; margin-bottom: 6px; }
+        .pillar p { font-size: 15px; color: #4A4744; }
+        ul.features { list-style: none; }
+        ul.features li { font-size: 15px; color: #4A4744; margin-bottom: 10px; padding-left: 22px; position: relative; }
+        ul.features li::before { content: "✓"; position: absolute; left: 0; color: #3D9970; font-weight: 700; }
+        .pricing { background: #FFFFFF; border-radius: 16px; padding: 24px; }
+        .pricing p { font-size: 15px; color: #4A4744; margin-bottom: 10px; }
+        .pricing p:last-child { margin-bottom: 0; }
+        details { background: #FFFFFF; border-radius: 12px; padding: 16px 20px; margin-bottom: 10px; }
+        summary { font-size: 15px; font-weight: 600; cursor: pointer; }
+        details p { font-size: 14px; color: #4A4744; margin-top: 10px; }
+        footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid #E5E0D8; font-size: 13px; color: #A09B94; text-align: center; }
+        footer a { color: #3D9970; text-decoration: none; margin: 0 8px; }
+        footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>FlowCalm</h1>
-    <p>ADHD-focused productivity app — Focus. Breathe. Grow.</p>
-    <ul>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms-of-service.html">Terms of Service</a></li>
-    </ul>
+    <div class="wrap">
+        <header>
+            <span class="badge">FlowCalm</span>
+            <h1>You know what to do.<br>Starting is the part that's hard.</h1>
+            <p class="tagline">FlowCalm is a focus app built around how ADHD actually works — not another productivity app hoping willpower shows up.</p>
+            <a class="cta" href="https://apps.apple.com/app/id6760300743">Download on the App Store</a>
+            <p class="trust">No ads · No account required · Works fully offline · Cancel anytime</p>
+        </header>
+
+        <section>
+            <h2>Three things FlowCalm does differently</h2>
+            <div class="pillars">
+                <div class="pillar">
+                    <h3>STUCK ON A TASK? BREAK IT DOWN.</h3>
+                    <p>Tap once and any task splits into steps small enough to actually start. No more staring at "write the report" for twenty minutes.</p>
+                </div>
+                <div class="pillar">
+                    <h3>MISSED A DAY? YOUR STREAK SURVIVES.</h3>
+                    <p>Streak shields protect your progress from one bad day. FlowCalm never punishes you for being human — no guilt copy, no broken streaks, no reason to give up and delete the app.</p>
+                </div>
+                <div class="pillar">
+                    <h3>TIME DISAPPEARS? WATCH IT DRAIN.</h3>
+                    <p>A real visual timer — a ring that empties as your sprint runs — keeps time visible instead of an abstract number ticking down.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>What's inside</h2>
+            <ul class="features">
+                <li>Focus sprints with a real visual timer — watch the ring drain, not a number tick down</li>
+                <li>Instant task breakdowns — turn "I don't know where to start" into a list</li>
+                <li>Streak shields — a missed day costs a shield, never your progress</li>
+                <li>Time Sense training — see your estimate vs. what actually happened</li>
+                <li>A distraction parking lot — capture a stray thought without losing focus</li>
+                <li>Ambient sounds and focus music — rain, ocean, fireplace, and more</li>
+                <li>A companion that grows with you — and actually notices when you show up</li>
+                <li>A forest that fills in, one completed sprint at a time</li>
+                <li>Full stats — see where your focus really goes, not just this week</li>
+                <li>Body double sessions — name a friend or use a virtual partner, no networking involved</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Free vs. PRO</h2>
+            <div class="pricing">
+                <p><strong>Free forever:</strong> the sprint loop, your first sounds, your streak, your forest.</p>
+                <p><strong>FlowCalm PRO</strong> removes the daily caps and adds unlimited task breakdowns, the full sound library, and your complete history.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Frequently asked questions</h2>
+            <details>
+                <summary>Is FlowCalm free to use?</summary>
+                <p>Yes. The core focus-sprint loop, your first ambient sounds, your streak, and your forest are free forever. FlowCalm PRO removes the daily caps and adds unlimited task breakdowns, the full sound library, and your complete stats history.</p>
+            </details>
+            <details>
+                <summary>Do I need to create an account?</summary>
+                <p>No. FlowCalm has no login, no account, and no sign-up. All your data — tasks, streaks, sessions — stays locally on your device.</p>
+            </details>
+            <details>
+                <summary>Does FlowCalm work offline?</summary>
+                <p>Yes, fully. Every feature works without an internet connection.</p>
+            </details>
+            <details>
+                <summary>What is FlowCalm's "body double" mode?</summary>
+                <p>It's a local ADHD focus technique — name a friend or choose a virtual partner and it feels like someone is working alongside you. There is no networking, no account, and no real other person involved.</p>
+            </details>
+            <details>
+                <summary>How do I cancel FlowCalm PRO?</summary>
+                <p>Manage or cancel your subscription anytime from your Apple ID subscription settings. FlowCalm never charges you directly and never sees your payment details.</p>
+            </details>
+            <details>
+                <summary>Is FlowCalm a medical or diagnostic tool?</summary>
+                <p>No. FlowCalm is a self-help focus and productivity app. It does not diagnose or treat ADHD or any condition and makes no medical claims.</p>
+            </details>
+        </section>
+
+        <footer>
+            <p>
+                <a href="privacy-policy.html">Privacy Policy</a>·
+                <a href="terms-of-service.html">Terms of Service</a>·
+                <a href="mailto:support@hidstech.com">support@hidstech.com</a>
+            </p>
+            <p style="margin-top: 10px;">© 2026 Hidstech Ltd</p>
+        </footer>
+    </div>
 </body>
 </html>
